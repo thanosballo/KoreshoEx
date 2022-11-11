@@ -17,6 +17,13 @@ a {
 ul { list-style: none;
     
 }
+.text-center {
+    text-align: center;
+}
+
+.bigger-font {
+    font-size: 2rem;
+}
 /* header */
 nav {
     position: fixed;
@@ -25,6 +32,7 @@ nav {
     padding:0.5rem 1rem;
     margin: 0 auto;
     transition: ease-in-out 0.3s;
+    z-index: 1;
 }
 .main-flex {
     display: flex;
@@ -58,6 +66,17 @@ nav {
 
 .header-img{
     width:100%;
-    position: absolute;
-    z-index: -2;
+}
+
+/* Showcase */
+
+#showcase {
+    width: 100%;
+}
+.new-items-showcase {
+    display: flex;
+    gap: 1rem;
+}
+.new-items-showcase img {
+    width: 100%;
 }
