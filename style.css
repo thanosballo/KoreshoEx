@@ -27,9 +27,7 @@ ul { list-style: none;
 /* header */
 nav {
     position: fixed;
-    top: 0;
     width: 100%;
-    padding:0.5rem 1rem;
     margin: 0 auto;
     transition: ease-in-out 0.3s;
     z-index: 1;
@@ -37,16 +35,9 @@ nav {
 .main-flex {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-}
-
-.nav-links ul li {
-    display: inline;
-    margin:0 1rem;
-}
-
-.nav-links ul li a {
-    font-weight: 300;
+    align-items: stretch;
+    padding: 0.25rem .5rem;
+    position: relative;
 }
 
 .login-nav ul li {
@@ -61,13 +52,66 @@ nav {
     width: 200px;
 }
 .logo img {
-    width:100%
+    width:50%;
 }
 
 .header-img{
     width:100%;
 }
+.nav-links,.logo,.login-nav {
+    flex:1 1 0;
+}
+.main-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 300;
+}
+.main-menu li {
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    height: 100%;
+}
+.main-menu li:hover .sub-menu{
+    display: block;
+}
+.main-menu li a {
+    padding: 1rem 1rem;
+}
+.login-nav {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
 
+/*Dropdown */
+.sub-menu {
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-top: 1px solid lightgrey;
+    margin: 0 auto;
+    display: none;
+}
+.sub-menu-container {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    justify-content:space-between;
+    align-items: center;
+}
+.active {
+    display: block;
+}
 /* Showcase */
 
 #showcase {
