@@ -12,16 +12,13 @@ window.onscroll = function() {
   if (prevScrollpos==0)
     document.querySelector("#navbar").style.backgroundColor="transparent";
 };
-let subMenu=document.querySelector(".sub-menu");
-let subDisplay=window.getComputedStyle(subMenu);
-let shopBtn=document.querySelector("#shop-btn");
-shopBtn.addEventListener("mouseover",()=>{
-  if (subDisplay.display=="block"){
-    document.querySelector("#navbar").style.backgroundColor="white"; 
-  }
-})
-shopBtn.addEventListener("mouseout",()=>{
-  if (window.scrollY===0){
-    document.querySelector("#navbar").style.backgroundColor="transparent";}
-})
 
+
+function mouseOver(){
+    document.querySelector("#navbar").style.backgroundColor="white";  
+};
+function mouseOut(){
+  if (window.scrollY===0){
+    document.querySelector("#navbar").style.backgroundColor="transparent";
+  };
+};
