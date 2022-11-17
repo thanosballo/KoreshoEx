@@ -25,7 +25,10 @@ ul { list-style: none;
 }
 
 .bigger-font {
-    font-size: 2rem;
+    font-size: 4rem;
+}
+.bottom-line {
+    border-bottom:2px solid black;
 }
 /* header */
 nav {
@@ -173,26 +176,96 @@ nav {
 .new-items-showcase img {
     width: 100%;
 }
+
+/*Category showcase */
 .categories-showcase{
     display: flex;
     gap: 1rem;
     width: 100%;
     justify-content: center;
-    align-items::stretch;
+    align-items: stretch;
 }
-.left-category-img {
-    width:50%;
+.leftlink {
+    flex: 1 1 0;
+    position: relative;
 }
-.left-category-img img {
+.rightlink {
+    position:relative;
+}
+.overtext {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3rem;
+}
+.leftimg {
     height: 100%;
     width: 100%;
 }
 .right-category-img {
-    width: 50%;
+    flex: 1 1 0;
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
-.right-category-img img {
+.right-category-img img {  
     width: 100%;
+}
+
+/* Subscribe Section */
+#contact {
+    margin: 1rem 0;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub-card {
+    padding: 2rem;
+}
+.sub-card h4 {
+    font-weight: 400;
+    padding-bottom:2rem;
+}
+form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+input[type=email]{
+   border:none;
+   padding:0.75rem 0;
+}
+input[type=email]:focus{
+    outline:none;
+}
+button[type=submit]{
+    background-color: white;
+    padding: 0.5rem 0;
+    float: right;
+    border:none;
+    cursor:pointer;
+}
+.checkboxline {
+    margin-top:1.5rem;
+    padding-left:0.25rem;
+}
+label{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+input[type=checkbox]{
+    background-color: black;
+    accent-color: black;
+    transform:scale(2);
+    border: none;
+}
+
+.checkboxline label {
+    padding-left:1rem;
 }
