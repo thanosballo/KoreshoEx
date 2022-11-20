@@ -191,6 +191,7 @@ nav {
 }
 .rightlink {
     position:relative;
+    width: 100%;
 }
 .overtext {
     position: absolute;
@@ -212,6 +213,7 @@ nav {
 }
 .right-category-img img {  
     width: 100%;
+    height: 100%;
 }
 
 /* Subscribe Section */
@@ -328,7 +330,7 @@ h2 {
     display: flex;
     justify-content:flex-start;
     align-items: stretch;
-    padding-bottom:2rem;
+    padding:0 0 2rem 0;
 }
 .item-photos {
     width: 65%;
@@ -343,7 +345,11 @@ h2 {
 .item-info{
     width: 40%;
     min-height: 100%;
+    margin-bottom: 4rem;
 }
+
+/*Item card */
+
 .item-info-card {
     margin-top: 15rem;
     padding: 1rem;
@@ -357,6 +363,7 @@ h2 {
 .item-info-card-heading h2{
     margin: 0;
     padding: 0;
+    font-weight: 500;
 }
 .item-info-card-heading a {
     padding:0.25rem;
@@ -372,4 +379,72 @@ button {
     position: sticky;
     top: 100px;
     right: 0;
+}
+.alternative-title {
+    display: inline-block;
+    color: var(--gray);
+    padding: 0.5rem 0;
+    font-weight: 200;
+}
+.price {
+    display:inline-block;
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin-bottom: 3rem;
+}
+.sizes-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 3rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
+.size-button {
+    margin-left:4rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+.size-button:first-child{
+    margin-left:1.5rem;
+}
+.size-button:hover{
+    box-shadow: inset 0px 0px 0px 2px var(--gray);
+    border-radius: 50%;
+}
+.add-shop {
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size:1rem;
+    padding:0.75rem 0;
+    cursor: pointer;
+}
+.item-desc {
+    margin:1.5rem 0;
+    color: var(--gray);
+    font-size: 1rem;
+    font-weight: 200;
+}
+.item-specs {
+    color: var(--gray);
+    font-size: 1rem;
+    font-weight: 200;
+    padding:0 2.5rem 0 2rem;
+}
+.item-specs ul li:last-child{
+    font-weight: 600;
+}
+.details-section {
+    margin-top: 3rem;
+    font-size: 0.7rem;
+    font-weight: 300;
+}
+.details-section ul li {
+    padding: 0.1rem 0;
+}
+.details-section ul li a{
+    border-bottom: 1px solid black;
 }

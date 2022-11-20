@@ -1,16 +1,9 @@
-let prevScrollpos = window.scrollY;
-
 window.onscroll = function() {
-  let currentScrollPos = window.scrollY;
-  if (prevScrollpos > currentScrollPos) {
-    document.querySelector("#navbar").style.top = "0";
+  if (window.scrollY > 100) {
     document.querySelector("#navbar").style.backgroundColor="white";
   } else {
-    document.querySelector("#navbar").style.top = "-100px";
-  }
-  prevScrollpos = currentScrollPos;
-  if (prevScrollpos==0)
     document.querySelector("#navbar").style.backgroundColor="transparent";
+  }
     stickyFunction();
   };
 
@@ -42,9 +35,8 @@ let heartStatus=true;
 
 let itemCard=document.querySelector(".item-info-card");
 let sticky=itemCard.offsetTop;
-console.log(sticky);
 function stickyFunction() {
-  if (((window.pageYOffset)+240)> sticky){
+  if (((window.scrollY)+240)> sticky){
     itemCard.classList.add("sticky");
   } else {
     itemCard.classList.remove("sticky");
