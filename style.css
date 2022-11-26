@@ -448,6 +448,31 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin:0 auto;
+    margin:1rem 0;
     padding: 0 1.25rem;
+}
+.controlers-heading {
+    color: var(--gray);
+}
+.grid-container {
+    margin: 1rem auto;
+    padding: 0 1.25rem 4rem 1.25rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    width: 100%;
+}
+.product-card-show {
+    width: 100%;
+}
+.product-card-show img {
+    width: 100%;
+}
+.product-card-show h4 {
+    font-size: 0.9rem;
+}
+.item-price{
+    font-size: 0.9rem;
+    color: var(--gray);
+    margin-top: 0.25rem;
 }
