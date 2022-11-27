@@ -80,9 +80,20 @@
                     </ul>
                 </div>
                 <div class="login-nav">
-                    <ul>
+                    <ul onmouseover="mouseOver()" onmouseout="mouseOut()">
                         <li><a href="#">Login</a></li>
-                        <li><a href="#"><i class="las la-search"></i></a></li>
+                        <li class="search-btn"><a href="#"><i class="las la-search"></i></a>
+                            <div class="sub-menu">
+                                <div class="sub-menu-container">
+                                    <div id="search-input-box">
+                                        <form action="search.php">
+                                        <input type="text" id="search-input">
+                                        <button><i class="las la-search"></i></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
                         <li><a href="#"><i class="las la-shopping-bag"></i></a></li>
                     </ul>
                 </div>
