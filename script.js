@@ -1,41 +1,33 @@
 let active=false;
+let navBar=document.querySelector("#navbar");
+let toggleBtn=document.querySelector(".toggle-btn");
+let toggleNavLinks=document.querySelector(".nav-links");
+toggleBtn.addEventListener("click",()=>{
+  if (!navBar.classList.contains("white-bg"))
+  {navBar.classList.add("white-bg");}
+  else if (navBar.classList.contains("white-bg") && (window.scrollY===0)) 
+  { navBar.classList.remove("white-bg");}
+  
+  toggleBtn.classList.toggle("open");
+  toggleNavLinks.classList.toggle("open");
+});
+
 function mouseOver(){
-    document.querySelector("#navbar").style.backgroundColor="white"; 
+    navBar.classList.add("white-bg");
     active=true;
 };
 function mouseOut(){
   if (window.scrollY===0){
-    document.querySelector("#navbar").style.backgroundColor="transparent";
+    navBar.classList.remove("white-bg");
     active=false;
   };
 };
 window.onscroll = function() {
   if (window.scrollY > 0) {
-    document.querySelector("#navbar").style.backgroundColor="white";
+    navBar.classList.add("white-bg");
+    a=true;
   } else if ((window.scrollY===0) && (active===false)) {
-    document.querySelector("#navbar").style.backgroundColor="transparent";
+    navBar.classList.remove("white-bg");
+    active=false;
   } 
   };
-let gridContainer=document.querySelector(".grid-container");
-let twoButton=document.querySelector(".grid-button-2");
-let fourButton=document.querySelector(".grid-button-4");
-let graphBoxTwo=document.querySelectorAll(".graph-box-two");
-let graphBoxFour=document.querySelectorAll(".graph-box-four");
-twoButton.addEventListener("click",()=>{
-  gridContainer.classList.add("grid-two");  
-  graphBoxTwo.forEach((graphBoxTwo) => {
-    graphBoxTwo.classList.add("black-bg");
-  });
-  graphBoxFour.forEach((graphBoxFour)=>{
-    graphBoxFour.classList.remove("black-bg");
-  })
-});
-fourButton.addEventListener("click",()=>{
-  gridContainer.classList.remove("grid-two");  
-  graphBoxFour.forEach((graphBoxFour) => {
-    graphBoxFour.classList.add("black-bg");
-  });
-  graphBoxTwo.forEach((graphBoxTwo)=>{
-    graphBoxTwo.classList.remove("black-bg");
-  });
-});
