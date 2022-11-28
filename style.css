@@ -75,7 +75,7 @@ nav {
     align-items: center;
     justify-content: center ;
     height: 100%;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .main-menu li a {
@@ -95,7 +95,7 @@ nav {
     display: inline;
     margin-left: 1.5rem;
     height: 100%;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 .login-nav ul li a {
     font-weight: 200;
@@ -109,6 +109,7 @@ nav {
 .login-nav .sub-menu-container{
     width: 95%;
     justify-content: flex-end;
+
     align-items: center;
 }
 #search-input {
@@ -556,28 +557,58 @@ button {
 
 @media (min-width:1921px){
     .bigger-font{
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
     .main-flex{
-        padding: 1rem 2rem 1rem 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
     .logo a img {
         width:300px;
     }
     .main-menu li , .login-nav ul li {
-        font-size:1.5rem;
+        font-size:1.3rem;
     }
     .sub-card h4 {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
     .sub-card input ,.sub-card button{
-        font-size: 1.7rem;
+        font-size: 1.3rem;
     }
     .checkboxline label {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     .footer-card{
+        font-size: 1rem;
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px){
+    .bigger-font{
+        font-size: 2.5rem;
+    }
+    /* .main-flex{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    } */
+
+    .logo a img {
+        width:150px;
+    }
+    .main-menu li , .login-nav ul li {
+        font-size:1rem;
+    }
+    .sub-card h4 {
         font-size: 1.2rem;
+    }
+    .sub-card input ,.sub-card button{
+        font-size: 1rem;
+    }
+    .checkboxline label {
+        font-size: 0.8rem;
+    }
+    .footer-card{
+        font-size: 0.8rem;
     }
 }
