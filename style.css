@@ -685,4 +685,17 @@ button {
       .toggle-btn.open  #line3 {
         transform: rotate(-45deg);
       }
+      .relative {
+        position: relative;
+      }
+      .sub-menu:active {
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: aqua;
+      }
+      .main-menu , .main-menu li{
+        width: 100%;
+      }
+      
 }
