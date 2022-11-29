@@ -688,7 +688,7 @@ button {
       .relative {
         position: relative;
       }
-      .sub-menu:active {
+      .sub-menu {
         top: 100%;
         left: 0;
         right: 0;
@@ -697,5 +697,10 @@ button {
       .main-menu , .main-menu li{
         width: 100%;
       }
-      
-}
+      .main-menu li:hover .sub-menu {
+        display: none;
+      }
+      .main-menu li:focus .sub-menu {
+        display: block;
+      }
+}   
