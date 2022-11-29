@@ -698,9 +698,6 @@ button {
         width: 100%;
       }
       .main-menu li:hover .sub-menu {
-        display: none;
-      }
-      .main-menu li:focus .sub-menu {
         display: block;
       }
 }   
