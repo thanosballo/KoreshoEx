@@ -735,6 +735,18 @@ button {
    }
    .instagramm-container div:nth-child(even) {
     display: none;
-
+   }
+   input[type=email],button[type=submit]{
+    font-size: 0.8rem;
+   }
+   .bottom-line{
+    display: flex;
+    justify-content: space-between;
+   }
+   .checkboxline {
+    display: flex;
+   }
+   .checkboxline label {
+    font-size: 0.8rem;
    }
 }   
