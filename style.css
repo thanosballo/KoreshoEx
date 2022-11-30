@@ -631,6 +631,7 @@ button {
       }
       .nav-links.open {
         top: 85px;
+        height: 100vh;
       }
       .nav-links .main-menu {
         flex-direction: column;
@@ -697,7 +698,19 @@ button {
         right: 0;
         background-color: aqua;
       }
-      .main-menu , .main-menu li{
+      .main-menu {
+        width: 100%;
+      }
+      .main-menu {
+        padding-top: 2rem;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      .main-menu li a {
+        display: block;
+      }
+      .main-menu li {
+        height: auto;
         width: 100%;
       }
       .main-menu li:hover .sub-menu {
@@ -706,4 +719,22 @@ button {
       .overtext {
         font-size: 1.5rem;
     }
+
+   /*  showcase  */
+   .bigger-font {
+    font-size: 2rem;
+   }
+   .new-items-showcase div:last-child {
+    display: none;
+   }
+   .categories-showcase {
+    flex-direction: column;
+   }
+   .instagramm-container {
+    flex-direction: column;
+   }
+   .instagramm-container div:nth-child(even) {
+    display: none;
+
+   }
 }   
