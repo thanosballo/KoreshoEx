@@ -6,7 +6,7 @@ toggleBtn.addEventListener("click",()=>{
   toggleNavLinks.classList.toggle("open");
   if (toggleNavLinks.classList.contains("open"))
   {navBar.classList.add("white-bg");}
-  else if (toggleNavLinks.classList.contains("open") && (window.scrollY===0)) 
+  else if (!toggleNavLinks.classList.contains("open") && (window.scrollY===0)) 
   { navBar.classList.remove("white-bg");}
 });
 

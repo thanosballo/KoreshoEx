@@ -719,6 +719,9 @@ button {
       .overtext {
         font-size: 1.5rem;
     }
+    .footer-card {
+        font-size: 0.6rem;
+    }
 
    /*  showcase  */
    .bigger-font {
@@ -748,5 +751,21 @@ button {
    }
    .checkboxline label {
     font-size: 0.8rem;
+   }
+
+
+   /* --------ItemPage--------- */
+   .item-flex {
+    align-items: center;
+    flex-direction: column;
+   } 
+   .item-photos {
+    width: 100%;
+   }
+   .item-info {
+    width: 80%;
+   }
+   .item-info-card {
+    margin-top: 1rem;
    }
 }   

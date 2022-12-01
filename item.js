@@ -1,11 +1,3 @@
-window.onscroll = function() {
-    if (window.scrollY > 100) {
-      document.querySelector("#navbar").style.backgroundColor="white";
-    } else {
-      document.querySelector("#navbar").style.backgroundColor="transparent";
-    }
-      stickyFunction();
-    };
 function mouseOver(){
         document.querySelector("#navbar").style.backgroundColor="white";  
     };
