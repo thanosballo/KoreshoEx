@@ -631,7 +631,6 @@ button {
       }
       .nav-links.open {
         top: 85px;
-        height: 100vh;
       }
       .nav-links .main-menu {
         flex-direction: column;
@@ -693,10 +692,12 @@ button {
         position: relative;
       }
       .sub-menu {
-        top: 100%;
-        left: 0;
-        right: 0;
         background-color: aqua;
+        width: 100%;
+        position:static;
+      }
+      li:hover .sub-menu {
+        display: block;
       }
       .main-menu {
         width: 100%;
@@ -712,6 +713,8 @@ button {
       .main-menu li {
         height: auto;
         width: 100%;
+        flex-direction: column;
+        justify-content: center;
       }
       .main-menu li:hover .sub-menu {
         display: block;
