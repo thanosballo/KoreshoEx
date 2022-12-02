@@ -29,10 +29,11 @@ window.onscroll = function() {
 let mobMenu=document.querySelector(".mob-menu-link");
 let subMobMenu=document.querySelector("#shop-sub-menu");
 
-mobMenu.addEventListener("click",()=>{
+/* mobMenu.addEventListener("click",()=>{
   if (subMobMenu.classList.contains("displ-block")){
     subMobMenu.classList.remove("displ-block");
   } else {
     subMobMenu.classList.add("displ-block");
   };
 });
+ */

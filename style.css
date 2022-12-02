@@ -728,6 +728,9 @@ button {
       .main-menu li:hover .sub-menu {
         display: none;
       }
+      .main-menu li:active .sub-menu ,.main-menu li:focus .sub-menu{
+        display: block;
+      }
       .displ-block {
         display: block !important;
       }
