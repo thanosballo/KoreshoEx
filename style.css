@@ -149,6 +149,7 @@ nav {
 .sub-menu-container {
     display: flex;
     width: 60%;
+    gap: 1rem;
     margin: 0 auto;
     justify-content:space-between;
     align-items: flex-start;
@@ -549,10 +550,15 @@ button {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    gap: 1rem;
     color: var(--gray);
 }
 .sort-section p {
     font-size: 0.9rem;
+}
+.sort-section select {
+    border: none;
+    outline: none;
 }
 
 .main-flex .checkbox {
@@ -790,4 +796,4 @@ button {
    .grid-container {
     grid-template-columns: repeat(2,1fr);
    }
-}   
+}
