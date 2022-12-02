@@ -651,12 +651,13 @@ button {
     }
 
     .menu-btn_lines {
-        height: 26px;
-        width: 32px;
+        height: 30px;
+        width: 38px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         z-index:3;
+        transform: translateY(-5px);
     }
     .menu-btn_lines .line {
         display: block;
@@ -692,9 +693,12 @@ button {
         position: relative;
       }
       .sub-menu {
-        background-color: aqua;
         width: 100%;
         position:static;
+        border-bottom: 1px solid var(--gray);
+      }
+      .sub-menu-container {
+        width: 100%;
       }
       li:hover .sub-menu {
         display: block;
@@ -715,6 +719,7 @@ button {
         width: 100%;
         flex-direction: column;
         justify-content: center;
+        font-size: 0.9rem;
       }
       .main-menu li:hover .sub-menu {
         display: block;
@@ -770,5 +775,18 @@ button {
    }
    .item-info-card {
     margin-top: 1rem;
+   }
+
+
+
+   /* Gallery Page */
+   .grid-button-4 {
+    display:none;
+   }
+   .graph-box-two {
+    background-color: black;
+   }
+   .grid-container {
+    grid-template-columns: repeat(2,1fr);
    }
 }   

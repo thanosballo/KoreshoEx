@@ -1,21 +1,3 @@
-let active=false;
-function mouseOver(){
-    document.querySelector("#navbar").style.backgroundColor="white"; 
-    active=true;
-};
-function mouseOut(){
-  if (window.scrollY===0){
-    document.querySelector("#navbar").style.backgroundColor="transparent";
-    active=false;
-  };
-};
-window.onscroll = function() {
-  if (window.scrollY > 0) {
-    document.querySelector("#navbar").style.backgroundColor="white";
-  } else if ((window.scrollY===0) && (active===false)) {
-    document.querySelector("#navbar").style.backgroundColor="transparent";
-  } 
-  };
 let gridContainer=document.querySelector(".grid-container");
 let twoButton=document.querySelector(".grid-button-2");
 let fourButton=document.querySelector(".grid-button-4");
