@@ -707,9 +707,6 @@ button {
       .sub-menu-container {
         width: 100%;
       }
-      li:hover .sub-menu {
-        display: block;
-      }
       .main-menu {
         width: 100%;
       }
@@ -729,7 +726,10 @@ button {
         font-size: 0.9rem;
       }
       .main-menu li:hover .sub-menu {
-        display: block;
+        display: none;
+      }
+      .displ-block {
+        display: block !important;
       }
       .overtext {
         font-size: 1.5rem;
